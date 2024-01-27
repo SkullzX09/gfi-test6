@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Fugaz One' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>EcoInsight Registration</title>
+<style>
+body {
+font-family: 'Fugaz One';
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #1A5D1A;
+color: #fff;
+padding: 20px;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li {
+display: inline-block;
+margin-right: 10px;
+}
+
+nav ul li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 10px;
+}
+
+.intro-section {
+background-color: #f2f2f2;
+padding: 50px;
+}
+
+.intro-section h1 {
+font-size: 36px;
+color: #1A5D1A;
+}
+
+.intro-section p {
+font-size: 18px;
+color: #666;
+}
+
+.footer {
+background-color: #1A5D1A;
+color: #fff;
+padding: 10px;
+text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<ul>
+<li><a href="./home.html">Home</a></li>
+<li><a href="./about us.html">About Us</a></li>
+<li><a href="#blogs">Blogs</a></li>
+<li><a href="#about-ecoinight">About Ecoinight</a></li>
+<li><a href="reg2.html">Register for Ecoinisght</a></li>
+</ul>
+</nav>
+</header>
+
+<div class="intro-section">
+<h1>Welcome to EcoInsight Registration</h1>
+<p>Join our community to explore the world of ecoins and sustainable living.</p>
+<section id="register">
+<h2>Register for EcoinSight</h2>
+<form id="register-form">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required>
+<button type="button" onclick="register()">Register</button>
+</form>
+<script>
+function register() {
+var username = document.getElementById("username").value;
+var email = document.getElementById("email").value;
+var password = document.getElementById("password").value;
+// Perform registration logic here (e.g., send data to server)
+// For demonstration purposes, you can log the values to the console
+console.log("Username: " + username);
+console.log("Email: " + email);
+console.log("Password: " + password);
+}
+</script>
+</section>
+</div>
+
+<div class="footer">
+<p>&copy; 2023 EcoinSight. All rights reserved.</p>
+</div>
+
+</body>
+
+</html>
